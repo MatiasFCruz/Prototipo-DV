@@ -5,13 +5,13 @@ using UnityEngine;
 public class FPSCamera : MonoBehaviour
 {
     public Vector3 sensibility;
-    private Transform camera;
+    private Transform camara;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        camera = transform.Find("MainCamera"); //permite encontrar el objeto que se encuentra en la jerarquia
+        camara = transform.Find("MainCamera"); //permite encontrar el objeto que se encuentra en la jerarquia
         Cursor.lockState = CursorLockMode.None; //Permite que el cursor del mouse no se salga del juego 
     }
 
@@ -28,7 +28,7 @@ public class FPSCamera : MonoBehaviour
 
          if (vertical != 0)
         {
-            camera.Rotate(Vector3.left * vertical * sensibility.y); //movimiento horizontal y sensibilidad
+            camara.Rotate(Vector3.left * vertical * sensibility.y); //movimiento horizontal y sensibilidad
           
         }
 
