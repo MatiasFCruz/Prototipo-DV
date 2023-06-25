@@ -9,8 +9,7 @@ public class ControlDelPersonaje : MonoBehaviour {
     public CharacterController controlador;
     public Transform camara;
     public float velocidadDeMovimiento;
-    private float rotacionSuave = 0.1f;
-    float velocidadRotacionSuave;
+    private Vector3 moveDirection;
 
 
     [Header("Variables Salto y Suelo")]
@@ -44,20 +43,19 @@ public class ControlDelPersonaje : MonoBehaviour {
         if(estaEnElSuelo && velocidad.y <0){
             velocidad.y =-2f;
         }
+       
+        float horizontalMove = Input.GetAxis("Horizontal");
+        float verticalMove = Input.GetAxis("Vertical");
 
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direccion = new Vector3(horizontal,0f,vertical).normalized; //Normalized es para que al moverse en diagonal no vaya más rápido
-        animator.SetFloat(variableMovimiento, (Mathf.Abs(vertical) + Mathf.Abs(horizontal)));
-
-        if(direccion.magnitude >= 0.1f){
-            float anguloARotar = Mathf.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + camara.eulerAngles.y;
-            float angulo = Mathf.SmoothDampAngle(transform.eulerAngles.y, anguloARotar, ref velocidadRotacionSuave, rotacionSuave);
-            transform.rotation = Quaternion.Euler(0f,angulo,0f);
-
-            Vector3 direccionDelMovimiento = Quaternion.Euler(0f, anguloARotar, 0f) * Vector3.forward;
-            controlador.Move(direccionDelMovimiento.normalized * velocidadDeMovimiento * Time.deltaTime);
+        if (controlador.isGrounded)
+        {
+            moveDirection = new Vector3(horizontalMove, 0, verticalMove);
+            moveDirection = transform.TransformDirection(moveDirection);
         }
+
+        moveDirection.y -= 1.0f * Time.deltaTime;
+        controlador.Move(moveDirection * velocidadDeMovimiento * Time.deltaTime);
+        animator.SetFloat(variableMovimiento, (Mathf.Abs(verticalMove) + Mathf.Abs(horizontalMove)));
 
         if(Input.GetButtonDown("Jump") && estaEnElSuelo){
                 velocidad.y = Mathf.Sqrt(alturaDelSalto *-2f * gravedad);
@@ -68,5 +66,5 @@ public class ControlDelPersonaje : MonoBehaviour {
 
         animator.SetBool(variableSuelo, controlador.isGrounded);
     }
-    
+   
 }
