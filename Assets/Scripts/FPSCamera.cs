@@ -11,7 +11,7 @@ public class FPSCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        camera = transform.Find("Camera"); //permite encontrar el objeto que se encuentra en la jerarquia
+        camera = transform.Find("MainCamera"); //permite encontrar el objeto que se encuentra en la jerarquia
         Cursor.lockState = CursorLockMode.None; //Permite que el cursor del mouse no se salga del juego 
     }
 
