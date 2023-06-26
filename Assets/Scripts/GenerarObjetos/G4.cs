@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuertaEscalera : MonoBehaviour
+public class G4 : MonoBehaviour
 { 
     [SerializeField]
     private GameObject premio; //Llamaremos el premio que corresponda.
@@ -15,15 +15,14 @@ public class PuertaEscalera : MonoBehaviour
 
      void OnCollisionEnter(Collision collision) //Una vez detectada la colision...
     {
-        if(collision.gameObject.tag == "PuntoFinal") //Si buscamos el gameObject con la etiqueta "Punto" , entonces...
+        if(collision.gameObject.tag == "Punto2") //Si buscamos el gameObject con la etiqueta "Punto" , entonces...
         {
             premio.SetActive(true); //Se activara el premio que corresponda.
-             Destroy(GameObject.Find("CERRADO"));
         }
     }
      void OnCollisionExit(Collision collision) //Si ya no existe colision...
     {
-        if(collision.gameObject.tag == "PuntoFinal") //Si buscamos el gameObject con la etiqueta "Punto" , entonces...
+        if(collision.gameObject.tag == "Punto2") //Si buscamos el gameObject con la etiqueta "Punto" , entonces...
         {
             premio.SetActive(false); //Se desactivara el premio que corresponda.
         }

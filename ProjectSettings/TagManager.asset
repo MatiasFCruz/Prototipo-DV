@@ -8,6 +8,10 @@ TagManager:
   - PlayerInteraccion
   - Punto
   - PuntoFinal
+  - Punto1
+  - Punto2
+  - Punto3
+  - Punto4
   layers:
   - Default
   - TransparentFX
