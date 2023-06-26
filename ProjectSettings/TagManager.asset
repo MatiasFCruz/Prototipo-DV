@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Suelo
   - PlayerInteraccion
+  - Punto
+  - PuntoFinal
   layers:
   - Default
   - TransparentFX
