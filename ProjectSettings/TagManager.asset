@@ -12,6 +12,7 @@ TagManager:
   - Punto2
   - Punto3
   - Punto4
+  - Enemigo
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Suelo
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
