@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a12cadf0da3aa64f8cfff93e73b371d
+guid: baa406c906e92d64ebe86c6f22e01b27
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: bc1db80eded43f8478cea6d6fb4ac091, type: 2}
+    second: {fileID: 2100000, guid: 318a111bf57e7f94b8a97fa6eb1aac70, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: EnemigoParado
+      name: Parado
       takeName: Scene
       internalID: -623603649343465320
       firstFrame: 1
@@ -67,7 +67,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EnemigoCaminar
+      name: Caminando
       takeName: Scene
       internalID: -8800838248204228948
       firstFrame: 50
@@ -96,7 +96,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: EnemigoCorrer
+      name: Corriendo
       takeName: Scene
       internalID: -491678979986718739
       firstFrame: 99
@@ -107,7 +107,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
