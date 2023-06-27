@@ -57,6 +57,13 @@ public class ControlDelPersonaje : MonoBehaviour {
         controlador.Move(moveDirection * velocidadDeMovimiento * Time.deltaTime); // Mueve el controlador del personaje en base a la dirección de movimiento y la velocidad de movimiento del personaje
         animator.SetFloat(variableMovimiento, (Mathf.Abs(verticalMove) + Mathf.Abs(horizontalMove))); // Establece la animación del personaje en base al movimiento realizado por el usuario
 
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+         velocidadDeMovimiento = 5f;
+        }else{
+         velocidadDeMovimiento = 3f;
+        }
+
         if(Input.GetButtonDown("Jump") && estaEnElSuelo){
                 velocidad.y = Mathf.Sqrt(alturaDelSalto *-2f * gravedad); // El personaje saltará si se presiona el botón de salto y está en el suelo
         }
