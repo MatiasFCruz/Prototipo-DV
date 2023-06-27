@@ -33,6 +33,7 @@ public class Puerta : MonoBehaviour
         {
             targetPosition = openTransform.position;
             time = 0;
+            
         }
 
     }

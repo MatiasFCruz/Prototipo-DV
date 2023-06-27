@@ -13,6 +13,10 @@ TagManager:
   - Punto3
   - Punto4
   - Enemigo
+  - Pasador
+  - Pasador2
+  - Pasador3
+  - Pasador4
   layers:
   - Default
   - TransparentFX
