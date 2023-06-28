@@ -8,11 +8,15 @@ public class Llave : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) // Método que se ejecuta cuando un objeto colisiona con este objeto (en este caso, solo se ejecuta al colisionar un objeto con tag "Player")
     {
+
         if (other.tag == "Player") // Verifica si el objeto que colisionó tiene el tag "Player"
         {
             doorToOpen.isUnlocked = true; // Marca la puerta asociada con doorToOpen como desbloqueada
+            Destroy(gameObject); // Destruye este objeto
         }
-        Destroy(gameObject); // Destruye este objeto
+
+
+     
     }
 
 }
