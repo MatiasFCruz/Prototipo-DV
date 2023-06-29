@@ -31,7 +31,7 @@ Transform:
   - {fileID: 7885999564947910890}
   - {fileID: 3345013094557917539}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4213595454392505748
 GameObject:
@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3345013094557917539}
   - component: {fileID: 6827794312830127840}
   - component: {fileID: 4361824773651760624}
+  - component: {fileID: 134371379559011585}
   m_Layer: 0
   m_Name: Mesa 2doPiso
   m_TagString: Untagged
@@ -116,6 +117,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &134371379559011585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4213595454392505748}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7500002, y: 0.6994532, z: 0.6043977}
+  m_Center: {x: 0.0000009536743, y: 0, z: -0.0000019073486}
 --- !u!1 &6202082443296420124
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +149,7 @@ GameObject:
   - component: {fileID: 7885999564947910890}
   - component: {fileID: 6124106602347813118}
   - component: {fileID: 2393131316976345371}
+  - component: {fileID: 1237528120948691008}
   m_Layer: 0
   m_Name: Sch_Chair
   m_TagString: Untagged
@@ -199,3 +222,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1237528120948691008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202082443296420124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.46135306, y: 0.81688637, z: 0.47400331}
+  m_Center: {x: 0.0000009536743, y: 0.0196715, z: -0.0000019073486}
