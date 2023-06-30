@@ -31,7 +31,8 @@ void Start()
 
 private void Update()
 {
-    transform.position = Vector3.MoveTowards(transform.position, puntosMovimiento[siguientePaso].position, velocidadMovimiento *Time.deltaTime);
+   // transform.position = Vector3.MoveTowards(transform.position, puntosMovimiento[siguientePaso].position, velocidadMovimiento *Time.deltaTime);
+    
     
     if(Vector3.Distance(transform.position, puntosMovimiento[siguientePaso].position) < distanciaMinima)
     {

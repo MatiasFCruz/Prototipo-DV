@@ -13,7 +13,14 @@ public class RangoDeteccion : MonoBehaviour
     //Animacion
     public Animator animator; //Llamamos a las animaciones..
     
+   [SerializeField]
+   private float velocidadMovimiento;
+   [SerializeField]
+   private Transform[] puntosMovimiento;
+   [SerializeField]
+   private float distanciaMinima;
 
+   private int siguientePaso = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +30,21 @@ public class RangoDeteccion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+        transform.position = Vector3.MoveTowards(transform.position, puntosMovimiento[siguientePaso].position, velocidadMovimiento *Time.deltaTime);
+         transform.LookAt(puntosMovimiento[siguientePaso].position);
+ 
         estarAlerta = Physics.CheckSphere(transform.position,rangoAlerta,capaJugador);
+        Debug.Log(estarAlerta);
+
+           if(Vector3.Distance(transform.position, puntosMovimiento[siguientePaso].position) < distanciaMinima)
+    {
+        siguientePaso += 1;
+        if(siguientePaso >= puntosMovimiento.Length)
+        {
+            siguientePaso = 0;
+        }
+    }
 
         if(estarAlerta == true) //Si el jugador entra en el rango del enemigo....
         {
@@ -31,10 +52,12 @@ public class RangoDeteccion : MonoBehaviour
             transform.LookAt(new Vector3(jugador.position.x,transform.position.y,jugador.position.z));
             transform.position = Vector3.MoveTowards(transform.position,new Vector3(jugador.position.x,transform.position.y,jugador.position.z),velocidad * Time.deltaTime);
             animator.SetBool("estaCorriendo",true); //Se activa la animacion de "estaCorriendo"
-            animator.SetBool("estaParado",false); //Se desactiva la animacion de "estaParado"
+            animator.SetBool("estaCaminando",false); //Se desactiva la animacion de "estaParado"
         }else{ //Por el contrario si el player sale del rango de deteccion entonces...
             animator.SetBool("estaCorriendo",false); //Se desactiva la animacion de "estaCorriendo"
-            animator.SetBool("estaParado",true); //Se activa la animacion de de "estaParado"
+            animator.SetBool("estaCaminando",true); //Se activa la animacion de de "estaParado"
+            transform.position = Vector3.MoveTowards(transform.position, puntosMovimiento[siguientePaso].position, velocidadMovimiento *Time.deltaTime);
+
         }
 
     }
