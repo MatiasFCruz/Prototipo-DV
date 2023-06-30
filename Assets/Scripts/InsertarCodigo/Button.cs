@@ -12,7 +12,7 @@ public class Button : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Debug.Log("Clicked me!");
+        Debug.Log(keypadNumber);
         KeypadClicked.Invoke();
     }
 }

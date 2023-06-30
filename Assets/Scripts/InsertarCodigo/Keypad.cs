@@ -52,7 +52,7 @@ public class Keypad : MonoBehaviour
     {
         toOpen.Rotate(new Vector3(0,90,0), Space.World);
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(20);
 
         toOpen.Rotate(new Vector3(0,-90,0), Space.World);
 
