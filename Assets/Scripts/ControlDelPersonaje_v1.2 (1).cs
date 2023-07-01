@@ -7,10 +7,9 @@ public class ControlDelPersonaje : MonoBehaviour {
  
     [Header("Variables Movimiento Del Personaje")] // Variables públicas para controlar el movimiento del personaje
     public CharacterController controlador; // Controlador del personaje
-    public Transform camara; // Transform de la cámara
+    //public Transform camara; // Transform de la cámara
     public float velocidadDeMovimiento; // Velocidad de movimiento del personaje
     private Vector3 moveDirection; // Dirección del movimiento del personaje
-
 
     [Header("Variables Salto y Suelo")] // Variables públicas para controlar el salto del personaje
 
