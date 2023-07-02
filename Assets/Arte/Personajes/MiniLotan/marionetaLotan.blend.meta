@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: e08c4b6604203b54b860cc06aefa2442, type: 2}
+    second: {fileID: 2100000, guid: 261b4ea48dba5124895dcec4c561a502, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,9 +40,38 @@ ModelImporter:
     - serializedVersion: 16
       name: Reposo
       takeName: Scene
+      internalID: -623603649343465320
+      firstFrame: 20
+      lastFrame: 232
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Correr
+      takeName: Scene
       internalID: -8800838248204228948
-      firstFrame: 2
-      lastFrame: 180
+      firstFrame: 284
+      lastFrame: 352
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -67,18 +96,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Correr
+      name: Caminar
       takeName: Scene
-      internalID: -1609281748187839663
-      firstFrame: 280
-      lastFrame: 368
+      internalID: 723096430288179899
+      firstFrame: 460
+      lastFrame: 650
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
