@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 261b4ea48dba5124895dcec4c561a502, type: 2}
+    second: {fileID: 2100000, guid: 801a1c517dc89da49a13199fb1453ecb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -136,7 +136,7 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
-    importLights: 0
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
