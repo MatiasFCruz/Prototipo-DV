@@ -29,14 +29,9 @@ public class OpenDoor : MonoBehaviour
 
     // Raiz del objeto de la puerta
 
-    //public GameObject door;
-
-    // AudioSource asignado en el objeto door
-    //private AudioSource audioSource;
-
-    // Clips de audio
-    //public AudioClip closeDoorAudio;
-    //public AudioClip openDoorAudio;
+    public AudioSource quienEmite;
+    public AudioClip elSonido;
+    public float volumen = 1f;
 
     void Start()
     {
@@ -74,6 +69,7 @@ public class OpenDoor : MonoBehaviour
             // con esto conseguiremos que cuando unity llame a la funcion update
             // entre en el caso de abrir puerta
             open = !open;
+            quienEmite.PlayOneShot(elSonido,volumen);
 
             if (open)
             {

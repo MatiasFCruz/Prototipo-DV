@@ -11,6 +11,11 @@ public class Puerta : MonoBehaviour
     private bool enter;
     private Vector3 defaultRot;
     private Vector3 openRot;
+
+    public AudioSource quienEmite;
+    public AudioClip elSonido;
+    public float volumen = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +47,7 @@ public class Puerta : MonoBehaviour
                 // con esto conseguiremos que cuando unity llame a la funcion update
                 // entre en el caso de abrir puerta
                 open = !open;
+                quienEmite.PlayOneShot(elSonido,volumen);
 
                 if (open)
                 {
