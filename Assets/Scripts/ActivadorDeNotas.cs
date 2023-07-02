@@ -9,7 +9,7 @@ public class ActivadorDeNotas : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G) && activa == true)
+        if(Input.GetKeyDown(KeyCode.E) && activa == true)
         {
             notaVisual.SetActive(true);
         }
