@@ -14,7 +14,7 @@ public class ActivadorDeNotas : MonoBehaviour
             notaVisual.SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape) && activa == true)
+        if(Input.GetKeyDown(KeyCode.R) && activa == true)
         {
             notaVisual.SetActive(false);
         }
