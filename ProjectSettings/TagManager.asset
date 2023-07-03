@@ -19,6 +19,7 @@ TagManager:
   - Pasador4
   - Brazo
   - Keypad
+  - Keypad2
   layers:
   - Default
   - TransparentFX
