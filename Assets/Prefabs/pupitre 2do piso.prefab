@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2367518294265812496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.24, y: -10.37, z: 47.87}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 81.713776, y: -7.0394745, z: 32.664246}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32,7 +32,7 @@ Transform:
   - {fileID: 3345013094557917539}
   m_Father: {fileID: 0}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &4213595454392505748
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4361824773651760624}
   - component: {fileID: 134371379559011585}
   - component: {fileID: 3031718128501081572}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mesa 2doPiso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4213595454392505748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.52, y: 12.800526, z: -24.119999}
+  m_LocalPosition: {x: 11.79, y: 12.97, z: -24.41}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,8 +137,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7324562, y: 0.6994532, z: 0.6264734}
-  m_Center: {x: -0.005104065, y: 0, z: -0.023200512}
+  m_Size: {x: 0.7500002, y: 0.6994532, z: 0.6043977}
+  m_Center: {x: 0.0000009536743, y: 0, z: -0.0000019073486}
 --- !u!54 &3031718128501081572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2393131316976345371}
   - component: {fileID: 1237528120948691008}
   - component: {fileID: 7620659437769835805}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sch_Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,14 +193,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6202082443296420124}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.47, y: 12.810526, z: -24.86}
+  m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
+  m_LocalPosition: {x: 11.77, y: 13.02, z: -25.44}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7481813889777626419}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
 --- !u!33 &6124106602347813118
 MeshFilter:
   m_ObjectHideFlags: 0
